@@ -1,0 +1,17 @@
+<div class="container">
+  <a class="btn btn-warning mb-4" href="#" onclick="location.reload();">New cocktail</a>
+  <div class="container row">
+    <div class="container" *ngFor="let cocktail of cocktails">
+      <div class="card">
+        <div class="card-body">
+          <img [src]="cocktail.strDrinkThumb" class="card-img-top">
+          <h3 class="card-title">{{ cocktail.strDrink }}</h3>
+          <p class="card-text">{{ cocktail.strInstructions }}</p>
+          <a class="btn btn-primary mt-4" [routerLink]="['/detalle',cocktail.idDrink]">Details</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

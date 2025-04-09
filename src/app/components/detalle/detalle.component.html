@@ -1,0 +1,62 @@
+<div class="container mb-4 detalle" *ngIf="cocktail">
+	<h2 style="text-align: center;">Cocktail Details</h2>
+	<table class="table table-bordered tabla">
+		<thead>
+			<tr>
+				<th scope="col">Property</th>
+				<th scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody class="tableBody">
+			<tr>
+				<td>ID</td>
+				<td>{{ cocktail.idDrink }}</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>{{ cocktail.strDrink }}</td>
+			</tr>
+			<tr>
+				<td>Category</td>
+				<td>{{ cocktail.strCategory }}</td>
+			</tr>
+			<tr>
+				<td>Alcoholic</td>
+				<td>{{ cocktail.strAlcoholic }}</td>
+			</tr>
+			<tr>
+				<td>Glass</td>
+				<td>{{ cocktail.strGlass || 'No especificado' }}</td>
+			</tr>
+			<tr>
+				<td>Instructions</td>
+				<td>{{ cocktail.strInstructions }}</td>
+			</tr>
+			<tr>
+				<td>Ingredient 1</td>
+				<td>{{ cocktail.strIngredient1 || 'No disponible' }}</td>
+			</tr>
+			<tr>
+				<td>Ingredient 2</td>
+				<td>{{ cocktail.strIngredient2 || 'No disponible' }}</td>
+			</tr>
+			<tr>
+				<td>Ingredient 3</td>
+				<td>{{ cocktail.strIngredient3 || 'No disponible' }}</td>
+			</tr>
+			<tr>
+				<td>Ingredient 4</td>
+				<td>{{ cocktail.strIngredient4 || 'No disponible' }}</td>
+			</tr>
+			<tr>
+				<td>Measure 1</td>
+				<td>{{ cocktail.strMeasure1 }}</td>
+			</tr>
+			<tr>
+				<td>Measure 2</td>
+				<td>{{ cocktail.strMeasure2 }}</td>
+			</tr>
+		</tbody>
+	</table>
+	<a class="btn btn-primary mt-3" routerLink="/">Volver</a>
+</div>

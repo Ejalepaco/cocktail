@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;          
+  background-position: center;    
+  background-repeat: no-repeat;    
+  height: 100vh;                   
+  margin: 0;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
